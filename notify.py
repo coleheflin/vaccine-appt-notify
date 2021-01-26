@@ -50,6 +50,7 @@ for i in range(1000):
     if not found_appointment:
         print('Found appointment!!')
         send_email(SENDER_EMAIL, SENDER_PASS, RECEIVER_EMAILS, EMAIL_TEXT)
+        break
     else:
         print('Did not find appt')
     time.sleep(100)
